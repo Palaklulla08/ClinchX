@@ -7,7 +7,7 @@ const inputSchema = z.object({
   fileName: z.string().max(255).optional(),
 });
 
-const LOVABLE_AI_URL = "https://ai.gateway.lovable.dev/v1/chat/completions";
+const Lovable_AI_URL = "https://ai.gateway.Lovable.dev/v1/chat/completions";
 
 const SYSTEM_PROMPT = `You are CareerOS AI — a hybrid of: an ATS engine, a senior tech recruiter at FAANG, a hiring manager, an executive career coach, and a LinkedIn expert.
 
@@ -108,10 +108,10 @@ export const analyzeResume = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((data) => inputSchema.parse(data))
   .handler(async ({ data, context }) => {
-    const apiKey = process.env.LOVABLE_API_KEY;
-    if (!apiKey) throw new Error("LOVABLE_API_KEY not configured");
+    const apiKey = process.env.L_API_KEY;
+    if (!apiKey) throw new Error("Lovable_API_KEY not configured");
 
-    const res = await fetch(LOVABLE_AI_URL, {
+    const res = await fetch(Lovable_AI_URL, {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({

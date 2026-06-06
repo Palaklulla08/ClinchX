@@ -10,7 +10,7 @@ import {
 import { useEffect } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
+import { reportError } from "../lib/Lovable-error-reporting";
 import { Toaster } from "@/components/ui/sonner";
 
 function NotFoundComponent() {
@@ -75,8 +75,8 @@ export const Route = createRootRouteWithContext()({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "CareerOS AI — Your Personal AI Recruiter & Career Coach" },
       { name: "twitter:description", content: "AI-powered Career Operating System. Analyze your resume, ATS score, GitHub, LinkedIn, interview readiness, hiring probability and salary potential." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03988ef9-d832-4b18-97dd-b6aa43b6ffa6/id-preview-e2c036ff--f8dbd3dc-6458-417f-9cd2-57e6f181002e.lovable.app-1780727116787.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03988ef9-d832-4b18-97dd-b6aa43b6ffa6/id-preview-e2c036ff--f8dbd3dc-6458-417f-9cd2-57e6f181002e.lovable.app-1780727116787.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03988ef9-d832-4b18-97dd-b6aa43b6ffa6/id-preview-e2c036ff--f8dbd3dc-6458-417f-9cd2-57e6f181002e.Lovable.app-1780727116787.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/03988ef9-d832-4b18-97dd-b6aa43b6ffa6/id-preview-e2c036ff--f8dbd3dc-6458-417f-9cd2-57e6f181002e.Lovable.app-1780727116787.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

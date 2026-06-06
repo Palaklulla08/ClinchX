@@ -1,6 +1,6 @@
 export function reportLovableError(error, context = {}) {
   if (typeof window === "undefined") return;
-  window.__lovableEvents?.captureException?.(
+  window.__LovableEvents?.captureException?.(
     error,
     {
       source: "react_error_boundary",

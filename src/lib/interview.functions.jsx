@@ -2,12 +2,12 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 
-const LOVABLE_AI_URL = "https://ai.gateway.lovable.dev/v1/chat/completions";
+const Lovable_AI_URL = "https://ai.gateway.Lovable.dev/v1/chat/completions";
 
 async function callAI(messages, tools, toolName) {
-  const apiKey = process.env.LOVABLE_API_KEY;
-  if (!apiKey) throw new Error("LOVABLE_API_KEY not configured");
-  const res = await fetch(LOVABLE_AI_URL, {
+  const apiKey = process.env.Lovable_API_KEY;
+  if (!apiKey) throw new Error("Lovable_API_KEY not configured");
+  const res = await fetch(Lovable_AI_URL, {
     method: "POST",
     headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
     body: JSON.stringify({

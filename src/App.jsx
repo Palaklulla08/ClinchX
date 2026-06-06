@@ -1,13 +1,10 @@
+import { RouterProvider } from "@tanstack/react-router";
+import { getRouter } from "./router";
 
-import './App.css'
+const router = getRouter();
 
 function App() {
-
-
-  return (
-    <>
-
-      <h1>ClinchX</h1>
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
+
+export default App;
