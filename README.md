@@ -25,7 +25,7 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Source Code
 
 ```bash
-https://github.com/Palaklulla08/ClinchX.git
+git clone https://github.com/Palaklulla08/ClinchX.git
 cd ClinchX
 ```
 
